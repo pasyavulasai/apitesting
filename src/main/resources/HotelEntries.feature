@@ -37,22 +37,10 @@ Feature: Create Entry
 
   #Creating multiple Hotel entries
   Scenario:  - Creating Multiple entries after login with Admin user.
-    When I enter "test hotel1" with the id "hotelName"
-    And I enter "Test address1" with the id "address"
-    And I enter "test owner1" with the id "owner"
-    And I enter "11111111111" with the id "phone"
-    And I enter "test1@test.com" with the id "email"
+    When I enter "test hotel1" "Test address1" "test owner1" "11111111111" and "test1@test.com"
     And I click on link "logout" with the xpath "//div[1]/nav/div[1]/ul/li[2]/a"
-    When I enter "test hotel2" with the id "hotelName"
-    And I enter "Test address2" with the id "address"
-    And I enter "test owner2" with the id "owner"
-    And I enter "2222222222" with the id "phone"
-    And I enter "test2@test.com" with the id "email"
+    When I enter "test hotel2" "Test address2" "test owner2" "22222222222" and "test2@test.com"
     And I click on link "logout" with the xpath "//div[1]/nav/div[1]/ul/li[2]/a"
-    When I enter "test hotel3" with the id "hotelName"
-    And I enter "Test address3" with the id "address"
-    And I enter "test owner3" with the id "owner"
-    And I enter "3333333333" with the id "phone"
-    And I enter "test3@test.com" with the id "email"
+    When I enter "test hotel3" "Test address3" "test owner3" "33333333333" and "test3@test.com"
     And I click on link "logout" with the xpath "//div[1]/nav/div[1]/ul/li[2]/a"
     And I close the Browser
